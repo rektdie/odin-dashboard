@@ -5,25 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>Admin Dashboard</title>
 </head>
 <body>
     <div class="container">
         <div class="sidebar">
-            <div class="logo">Dashboard</div>
-            <div class="main-parts">
-                <div>Home</div>
-                <div>Profile</div>
-                <div>Messages</div>
-                <div>History</div>
-                <div>Tasks</div>
-                <div>Communities</div>
+            <div class="logo">
+                <img src="icons/view-dashboard.svg" alt="Dashboard" class="big-svg">
+                <h2>Dashboard</h2>
             </div>
-            <div class="misc">
-                <div>Settings</div>
-                <div>Support</div>
-                <div>Privacy</div>
-            </div>
+            <ul class="main-links">
+                <li><img class="small-svg" src="icons/home.svg" alt="Home"> <h3>Home</h3></li>
+                <li><img class="small-svg" src="icons/card-account-details.svg" alt="Profile"> <h3>Profile</h3></li>
+                <li><img class="small-svg" src="icons/message.svg" alt="Messages"> <h3>Messages</h3></li>
+                <li><img class="small-svg" src="icons/clock-time-four.svg" alt="History"> <h3>History</h3></li>
+                <li><img class="small-svg" src="icons/file-multiple.svg" alt="Tasks"> <h3>Tasks</h3></li>
+                <li><img class="small-svg" src="icons/account-group.svg" alt="Communities"> <h3>Communities</h3></li>
+            </ul>
+
+            <ul class="other-links">
+                <li><img class="small-svg" src="icons/cog.svg" alt="Settings"> <h3>Settings</h3></li>
+                <li><img class="small-svg" src="icons/help-box.svg" alt="Support"> <h3>Support</h3></li>
+                <li><img class="small-svg" src="icons/shield-check.svg" alt="Privacy"> <h3>Privacy</h3></li>
+            </ul>
         </div>
 
         <div class="navbar">

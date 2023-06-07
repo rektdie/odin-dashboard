@@ -1,3 +1,7 @@
+* {
+    font-family: 'Sofia Sans', sans-serif;
+}
+
 body {
     margin: 0;
 }
@@ -5,7 +9,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 8fr;
+    grid-template-rows: 1fr 5fr;
     height: 100vh;
 }
 
@@ -14,6 +18,10 @@ body {
     background-color: #1992d4;
     color: white;
     grid-row: 1 / span 2;
+    font-size: 1.2rem;
+    padding: 20px;
+    padding-top: 5px;
+    grid-template-rows: 1fr 5fr 6fr;
 }
 
 .navbar {
@@ -49,4 +57,30 @@ body {
 
 .title {
     font-weight: bold;
+}
+
+.big-svg {
+    width: 50px;
+    height: 50px;
+}
+
+.small-svg {
+    width: 30px;
+    height: 30px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 10px;
+}
+
+li, .logo {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+}
+
+li {
+    height: 52px;
 }
