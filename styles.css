@@ -26,7 +26,12 @@ body {
 
 .navbar {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 25px;
 }
 
 .main {
@@ -53,6 +58,7 @@ body {
     height: 170px;
     box-sizing: border-box;
     padding: 20px;
+    border-left: 8px solid #f0b429;
 }
 
 .title {
@@ -83,4 +89,68 @@ li, .logo {
 
 li {
     height: 52px;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    align-items: center;
+    width: 100%
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: 40px 60px 150px;
+    align-items: center;
+    justify-self: end;
+    gap: 20px;
+}
+
+.greeting {
+    display: grid;
+    grid-template-columns: 85px 300px;
+    grid-template-rows: 25px 25px;
+    align-items: center;
+    gap: 5px;
+}
+
+.small-avatar {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+.big-avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    grid-row: 1 / 3;
+}
+
+input[type="search"] {
+    appearance: none;
+    border:none;
+    height: 40%;
+    background-color: #e2e8f0;
+    border-radius: 25px;
+    padding-left: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    align-items: center;
+    justify-content: end;
+    gap: 35px;
+    margin-right: 35px;
+}
+
+button {
+    height: 60%;
+    background-color: #1992d4;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
 }
